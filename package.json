@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "description": "a coding test example",
   "main": "src/main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "nodemon src/main.js"
   },
   "repository": {
     "type": "git",
-    "url": "simple_resource_api"
+    "url": "https://github.com/Angga-R/simple_resource_api.git"
   },
   "author": "Anggara",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.19.1"
+  }
 }
