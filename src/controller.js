@@ -1,4 +1,4 @@
-import { prismaClient } from "../app/database.js";
+import { prismaClient } from "./database.js";
 
 const showData = async (req, res, next) => {
   try {
