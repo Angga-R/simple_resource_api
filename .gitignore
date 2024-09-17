@@ -1,6 +1,8 @@
 # Dependency directories
 node_modules/
+package-lock.json
 # Keep environment variables out of version control
 .env
 # migration db
 prisma/migrations/
+
