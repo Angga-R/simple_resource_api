@@ -1,10 +1,11 @@
 import express from "express";
-import { route } from "./routes.js";
+import controller from "./controller.js";
 
 const app = express();
 
 app.use(express.json());
-app.use(route);
+app.get("/", controller.showData);
+app.post("/add-data", controller.addData);
 
 app.listen(3000, () => {
   console.info("App starting on port 3000");
